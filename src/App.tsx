@@ -59,11 +59,11 @@ const App = () => {
     <div>
       <div id="mobileNavContainer" className="mobile-nav">
         <div className="mobile-nav-close-button" >
-          <img src="/icons/close.svg" alt="" onClick={toggleMenu}/>
+          <img src="/icons/close.svg" alt="close" onClick={toggleMenu}/>
         </div>
         <ul>
           <li>
-            <img className="mobile-nav-logo" src="/img/logo.png" alt="" />
+            <img className="mobile-nav-logo" src="/img/logo.png" alt="logomobile" />
           </li>
           <li>
             <a href="/#link1" onClick={toggleMenu}>
@@ -87,14 +87,14 @@ const App = () => {
           </li>
           <li>
             <div className="social-icons">
-              <img className="nav-social" src="/icons/twitter.svg" alt="" />
-              <img className="nav-social" src="/icons/discord.svg" alt="" />
+              <img className="nav-social" src="/icons/twitter.svg" alt="twitter" />
+              <img className="nav-social" src="/icons/discord.svg" alt="discord" />
             </div>
           </li>
         </ul>
       </div>
       <div className="mobile-menu-button" onClick={toggleMenu}>
-        <img src="/icons/menu.svg" alt="" />
+        <img src="/icons/menu.svg" alt="menu" />
       </div>
       <nav>
         <div className="nav-container">
@@ -106,8 +106,8 @@ const App = () => {
             AlphaArt
           </a>
           <div className="social-icons hide-800">
-            <img className="nav-social" src="/icons/twitter.svg" alt="" />
-            <img className="nav-social" src="/icons/discord.svg" alt="" />
+            <img className="nav-social" src="/icons/twitter.svg" alt="twitter" />
+            <img className="nav-social" src="/icons/discord.svg" alt="discord" />
           </div>
         </div>
       </nav>
@@ -115,7 +115,7 @@ const App = () => {
       <div id='stars2'></div>
       <div id='stars3'></div>
       <div className="earth-wrapper">
-        <img className="earth" src="./earth.png"/>  
+        <img className="earth" alt="earth" src="./earth.png"/>  
       </div>
       <div className="content-wrapper">
         <div className="image-wrapper">
