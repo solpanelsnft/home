@@ -98,18 +98,12 @@ const App = () => {
       </div>
       <nav>
         <div className="nav-container">
-          <img className="nav-logo" src="/img/logo.png" alt="" />
-          <a className="hide-800" href="/#link1">
-            Link 1
+          <h1 className="logo">Sol Panels NFT</h1>
+          <a className="hide-800" href="https://www.magiceden.io/">
+            MagicEden
           </a>
-          <a className="hide-800" href="/#link2">
-            Link 2
-          </a>
-          <a className="hide-800" href="/#link3">
-            Link 3
-          </a>
-          <a className="hide-800" href="/#link4">
-            Link 4
+          <a className="hide-800" href="https://alpha.art/">
+            AlphaArt
           </a>
           <div className="social-icons hide-800">
             <img className="nav-social" src="/icons/twitter.svg" alt="" />
@@ -117,96 +111,68 @@ const App = () => {
           </div>
         </div>
       </nav>
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+      <div className="earth-wrapper">
+        <img className="earth" src="./earth.png"/>  
+      </div>
+      <div className="content-wrapper">
+        <div className="image-wrapper">
+          <img src="./solPanel.png" width="200px" height="200px" className="inline solPanelImg1" alt="solPanel"/>
+          <img src="./solPanel.png" width="200px" height="200px" className="inline solPanelImg2" alt="solPanel"/>
+          <img src="./solPanel.png" width="200px" height="200px" className="inline solPanelImg3" alt="solPanel"/>
+        </div>
+      </div>
       <div className="content-wrapper">
           <header className="card" id="link1">
-            <div style={{ padding: "0 24px 0 24px 0" }}>
-              <h3 className="text-secondary-color">Welcome To</h3>
-              <h1 className="pb-3">The Boiler Plate</h1>
-              <p className="text-secondary-color">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                scelerisque ipsum non est porta mollis. Donec sapien sapien, dictum
-                eget enim sed, hendrerit semper orci. Donec ante magna, consequat at
-                eros ac, eleifend dictum sem. Nam vitae condimentum lorem.
-                Vestibulum molestie dui turpis, tincidunt porta sem congue nec.
-              </p>
-            </div>
-            <div>
+            <div className="center-content">
               <ThemeProvider theme={theme}>
                 <ConnectionProvider endpoint={endpoint}>
                   <WalletProvider wallets={wallets} autoConnect>
                     <WalletDialogProvider>
-                      
                         <Minter
                           candyMachineId={candyMachineId}
-                          
                           connection={connection}
                           startDate={startDateSeed}
                           txTimeout={txTimeout}
                           rpcHost={rpcHost}
                         />
-                      
                     </WalletDialogProvider>
                   </WalletProvider>
                 </ConnectionProvider>
               </ThemeProvider>
             </div>
           </header>
-
-          <div id="link2" className="container">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac velit
-            aliquet, semper sapien sed, ornare augue. Phasellus sed velit interdum,
-            sagittis metus quis, facilisis lectus. Cras sollicitudin purus at magna
-            eleifend maximus. Nulla nec nulla in nunc maximus viverra in at mauris.
-            Fusce sodales dolor nisi, et vehicula orci porta id. In placerat nunc
-            sed erat lacinia tincidunt. Interdum et malesuada fames ac ante ipsum
-            primis in faucibus. Vestibulum commodo eget metus vitae tempus. Aliquam
-            pharetra mi at efficitur accumsan. Curabitur venenatis libero a ex
-            porttitor, at auctor turpis hendrerit. Nam commodo, risus non consequat
-            pretium, erat ante auctor purus, a cursus dolor erat at velit. Maecenas
-            dignissim, dolor sed laoreet aliquam, tortor lacus faucibus urna, eget
-            mattis massa sem ac dui. Nam semper hendrerit interdum. Etiam at dictum
-            nisi.
-          </div>
-
-          <div id="link3" className="container card">
-            <h1 className="pb-3">Lorem ipsum</h1>
-          </div>
-
-          <div id="link4" className="container faq">
-            <h1 style={{ padding: "0 0 24px 0" }}>FAQ</h1>
-            <div>
-              <h4>Lorem ipsum?</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                id metus id mauris tincidunt posuere. Vivamus neque odio, imperdiet
-                vitae.
-              </p>
-
-              <hr />
-            </div>
-
-            <div>
-              <h4>Lorem ipsum?</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                id metus id mauris tincidunt posuere. Vivamus neque odio, imperdiet
-                vitae.
-              </p>
-
-              <hr />
-            </div>
-
-            <div>
-              <h4>Lorem ipsum?</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                id metus id mauris tincidunt posuere. Vivamus neque odio, imperdiet
-                vitae.
-              </p>
-
-              <hr />
-            </div>
-          </div>
+      </div>
+      <div className="content-wrapper">
+        <h1 className="heading">Saving the planet one Solar Panel at a time.</h1>
+      </div>
+      <div className="mission flex">
+        <div className="mission-text">
+          <h2 className="mission-title">Our mission is simple</h2>
+          <p>Funds raised during mint will go directly into providing homes with a free Solar Panel installation.</p>
+          <p>Sol Panel's NFT's are built and thrive on the most energy effecient blockchain that exists. Solana.</p>
+          <p>Prove to your NFT friends that you support saving the planet by having a Sol Panel NFT in your wallet.</p>
+        </div>
+        <div className="mission-image">
+          <img src="./solPanel.png" alt="solPanel" width="400px" height="400px"/>  
+        </div>
+      </div>
+      <div className="content-wrapper">
+        <h1 className="heading-1">Things need to change.</h1>
+      </div>
+      <div className="mission flex">
+      <div className="mission-image">
+          <img src="./solPanel.png" alt="solPanel" width="400px" height="400px"/>  
+        </div>
+        <div className="mission-text">
+          <h2 className="mission-title">Global warming is real.</h2>
+          <p>We all know its happening. This is our chance to do a small part and help fight back.</p>
+          <p>On average it costs $8000 to install Solar onto a house. Selling out means 100 new homes will have solar power.</p>
+          <p>Feel good knowing you're contributing to the cause.</p>
+        </div>
+        
       </div>
     </div>
   );

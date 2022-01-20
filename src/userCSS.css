@@ -1,13 +1,13 @@
 :root {
   
   /* Main Settings  */
-  --main-background-color: rgb(235, 235, 235);
+  --main-background-color: linear-gradient(326deg, rgba(2,0,36,1) 0%, rgba(248,234,148,1) 0%, rgba(164,164,244,1) 100%); 
 
-  --text-primary-color: rgb(0, 0, 0);
+  --text-primary-color: rgb(255, 255, 255);
   --text-secondary-color: rgb(68, 68, 68);
 
   /* Nav Settings  */
-  --nav-link-color: rgb(0, 0, 0);
+  --nav-link-color: rgb(255, 255, 255);
   --nav-link-hover-color: rgb(87, 87, 87);
   --nav-link-hover-background-color: none;
   --nav-background-color: none;
