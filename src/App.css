@@ -407,6 +407,20 @@ header {
   margin-bottom: 20px;
 }
 
+.hidden {
+  display: none;
+}
+
+.mintBtn {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  padding: 20px;
+  border-radius: 3px;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+}
+
 .minting-info h1 {
   font-size: 3rem;
   margin-bottom: 10px;
@@ -423,6 +437,7 @@ header {
  .heading {
    color:white;
    text-align: center;
+   margin-top: 10px;
  }
  .heading-1 {
   color:white;

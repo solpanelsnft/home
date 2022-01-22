@@ -1,6 +1,6 @@
 import "./App.css";
 import { useMemo } from "react";
-
+import {Helmet} from "react-helmet";
 import Minter from "./Minter";
 
 import * as anchor from "@project-serum/anchor";
@@ -57,13 +57,18 @@ const App = () => {
 
   return (
     <div>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Sol Panel NFT</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
       <div id="mobileNavContainer" className="mobile-nav">
         <div className="mobile-nav-close-button" >
-          <img src="/icons/close.svg" alt="close" onClick={toggleMenu}/>
+          <img src="/icons/close.svg" alt="image" onClick={toggleMenu}/>
         </div>
         <ul>
           <li>
-            <img className="mobile-nav-logo" src="/img/logo.png" alt="logomobile" />
+            <img className="mobile-nav-logo" src="/img/logo.png" alt="image" />
           </li>
           <li>
             <a href="/#link1" onClick={toggleMenu}>
@@ -124,7 +129,7 @@ const App = () => {
           <img src="./solPanel.png" width="200px" height="200px" className="inline solPanelImg3" alt="solPanel"/>
         </div>
       </div>
-      <div className="content-wrapper">
+      <div className="content-wrapper hidden">
           <header className="card" id="link1">
             <div className="center-content">
               <ThemeProvider theme={theme}>
@@ -145,6 +150,10 @@ const App = () => {
             </div>
           </header>
       </div>
+      <div className="content-wrapper">
+        <button className="mintBtn">Mint Coming Soon</button>
+      </div>
+      
       <div className="content-wrapper">
         <h1 className="heading">Saving the planet one Solar Panel at a time.</h1>
       </div>
