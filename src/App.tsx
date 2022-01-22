@@ -64,11 +64,11 @@ const App = () => {
             </Helmet>
       <div id="mobileNavContainer" className="mobile-nav">
         <div className="mobile-nav-close-button" >
-          <img src="/icons/close.svg" alt="image" onClick={toggleMenu}/>
+          <img src="/icons/close.svg" alt="menuitem" onClick={toggleMenu}/>
         </div>
         <ul>
           <li>
-            <img className="mobile-nav-logo" src="/img/logo.png" alt="image" />
+            <img className="mobile-nav-logo" src="/img/logo.png" alt="menuitem" />
           </li>
           <li>
             <a href="/#link1" onClick={toggleMenu}>
