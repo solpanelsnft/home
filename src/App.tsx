@@ -57,6 +57,7 @@ const App = () => {
 
   return (
     <div>
+      <div className="over">
       <Helmet>
                 <meta charSet="utf-8" />
                 <title>Sol Panel NFT</title>
@@ -107,26 +108,23 @@ const App = () => {
           <a className="hide-800" href="https://www.magiceden.io/">
             MagicEden
           </a>
-          <a className="hide-800" href="https://alpha.art/">
-            AlphaArt
-          </a>
+          
+          <a href="https://discord.gg/dfBzZ7AyTh">Discord</a>
+          
           <div className="social-icons hide-800">
             <img className="nav-social" src="/icons/twitter.svg" alt="twitter" />
-            <img className="nav-social" src="/icons/discord.svg" alt="discord" />
+            <a href="https://discord.gg/dfBzZ7AyTh"><img className="nav-social" src="/icons/discord.svg" alt="discord"/></a>
           </div>
         </div>
       </nav>
-      <div id='stars'></div>
-      <div id='stars2'></div>
-      <div id='stars3'></div>
       <div className="earth-wrapper">
         <img className="earth" alt="earth" src="./earth.png"/>  
       </div>
       <div className="content-wrapper">
         <div className="image-wrapper">
           <img src="./solPanel.png" width="200px" height="200px" className="inline solPanelImg1" alt="solPanel"/>
-          <img src="./solPanel.png" width="200px" height="200px" className="inline solPanelImg2" alt="solPanel"/>
-          <img src="./solPanel.png" width="200px" height="200px" className="inline solPanelImg3" alt="solPanel"/>
+          <img src="./img/art1.png" width="200px" height="200px" className="inline solPanelImg2" alt="solPanel"/>
+          <img src="./img/art2.png" width="200px" height="200px" className="inline solPanelImg3" alt="solPanel"/>
         </div>
       </div>
       <div className="content-wrapper hidden">
@@ -165,7 +163,7 @@ const App = () => {
           <p>Prove to your NFT friends that you support saving the planet by having a Sol Panel NFT in your wallet.</p>
         </div>
         <div className="mission-image">
-          <img src="./solPanel.png" alt="solPanel" width="400px" height="400px"/>  
+          <img src="./img/art3.png" alt="solPanel" width="400px" height="400px"/>  
         </div>
       </div>
       <div className="content-wrapper">
@@ -173,7 +171,7 @@ const App = () => {
       </div>
       <div className="mission flex">
       <div className="mission-image">
-          <img src="./solPanel.png" alt="solPanel" width="400px" height="400px"/>  
+          <img src="./img/art4.png" alt="solPanel" width="400px" height="400px"/>  
         </div>
         <div className="mission-text">
           <h2 className="mission-title">Global warming is real.</h2>
@@ -182,6 +180,13 @@ const App = () => {
           <p>Feel good knowing you're contributing to the cause.</p>
         </div>
         
+      </div>
+      <footer className="footer">
+        <p className="bottom-text">Created with ❤️ by Sol Panels Dev Team.</p>
+      </footer>
+      </div>
+      <div className="starsContainer">
+        <div id='stars2'></div>
       </div>
     </div>
   );
